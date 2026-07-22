@@ -277,6 +277,12 @@ h1, h2, h3, h4 { line-height: 1.15; letter-spacing: -0.02em; margin: 0; }
 .store-badge .txt span { font-size: 15px; font-weight: 600; letter-spacing: -0.01em; }
 .store-note { font-size: 13.5px; color: var(--ink-faint); margin-top: 12px; }
 
+/* official store badges */
+.app-badge { display: inline-flex; border-radius: 8px; transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease); }
+.app-badge img { height: 50px; width: auto; display: block; border-radius: 8px; }
+.app-badge:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+.app-badge:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
 /* ------------------------------------------------------------------- Hero */
 .hero { position: relative; padding: clamp(56px, 11vw, 116px) 0 clamp(48px, 8vw, 84px); overflow: hidden; }
 .aurora { position: absolute; inset: -20% -10% auto; height: 620px; pointer-events: none; z-index: 0; filter: blur(60px); opacity: 0.5; }
@@ -287,6 +293,16 @@ h1, h2, h3, h4 { line-height: 1.15; letter-spacing: -0.02em; margin: 0; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .aurora { opacity: 0.32; } }
 :root[data-theme="dark"] .aurora { opacity: 0.32; }
 .hero .wrap { position: relative; z-index: 1; }
+
+.back-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 14px; font-weight: 600; color: var(--ink-muted); text-decoration: none;
+  margin-bottom: 20px; padding: 7px 14px 7px 11px; border: 1px solid var(--border);
+  border-radius: 999px; background: var(--surface);
+  transition: color 0.2s, border-color 0.2s, transform 0.2s var(--ease);
+}
+.back-link:hover { color: var(--accent-strong); border-color: var(--accent); transform: translateX(-2px); }
+.back-link svg { width: 15px; height: 15px; }
 
 .eyebrow {
   display: inline-flex; align-items: center; gap: 8px;
@@ -441,7 +457,10 @@ h1, h2, h3, h4 { line-height: 1.15; letter-spacing: -0.02em; margin: 0; }
 .footer-bottom a:hover { color: var(--accent-strong); }
 
 /* --------------------------------------------------------------- Reveal FX */
-.reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); }
+/* Content is visible by default; the script adds `.reveal-init` to hide, then
+   `.in` to animate in. If the script never runs, everything stays visible. */
+.reveal { transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); }
+.reveal.reveal-init { opacity: 0; transform: translateY(18px); }
 .reveal.in { opacity: 1; transform: none; }
 .reveal.d1 { transition-delay: 0.06s; } .reveal.d2 { transition-delay: 0.12s; }
 .reveal.d3 { transition-delay: 0.18s; } .reveal.d4 { transition-delay: 0.24s; }
