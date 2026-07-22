@@ -3,38 +3,236 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Graphe — Memorize &amp; study the Bible</title>
-<meta name="description" content="Graphe is a calm, game-based app for memorizing and studying the Bible." />
+<title>Razón Studio — Small, thoughtful apps</title>
+<meta name="description" content="An independent studio building small, calm, privacy-first mobile apps. Home to Graphe, a Bible-memory app, and Daile, a reading diary." />
+<meta name="theme-color" content="#f6f5f2" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0e0f13" media="(prefers-color-scheme: dark)" />
+<link rel="icon" href="assets/favicon.png" type="image/png" />
+<link rel="apple-touch-icon" href="assets/favicon.png" />
 <link rel="stylesheet" href="styles.css" />
+<meta property="og:title" content="Razón Studio — Small, thoughtful apps" />
+<meta property="og:description" content="Independent, privacy-first mobile apps. Home to Graphe and Daile." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://graphe.app/" />
 </head>
 <body>
-<div class="wrap">
-  <header class="site">
-    <div class="mark">G</div>
-    <div class="name">Graphe</div>
-  </header>
 
-  <h1>Hide the Word in your heart.</h1>
-  <p>Graphe is a calm, game-based app for memorizing and studying the Bible —
-  daily lessons, spaced repetition, AI-crafted study plans and quizzes, and
-  gentle social challenges with friends.</p>
-
-  <div class="card">
-    <p style="margin:0"><strong>Need help or have a question?</strong></p>
-    <a class="button" href="support.html">Visit Support</a>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Razón Studio — home">
+      <span class="logo" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="20" height="20" fill="none"><circle cx="12" cy="16" r="8" fill="#fff" opacity="0.9"/><circle cx="20" cy="16" r="8" fill="#fff" opacity="0.55"/></svg>
+      </span>
+      <span class="wordmark">Razón <small>· studio</small></span>
+    </a>
+    <div class="nav-right">
+      <nav class="nav-links" id="nav-links">
+        <a href="#apps">Apps</a>
+        <a href="graphe/">Graphe</a>
+        <a href="daile/">Daile</a>
+        <a href="#values">Approach</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="icon-btn" data-theme-toggle aria-label="Toggle light or dark theme">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <button class="icon-btn nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
   </div>
+</header>
 
-  <h2>Legal</h2>
-  <nav class="pages" style="margin-top:8px">
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="terms.html">Terms of Use</a>
-    <a href="support.html">Support</a>
-  </nav>
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="aurora" aria-hidden="true"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
+    <div class="wrap">
+      <span class="eyebrow reveal"><span class="dot"></span> Independent app studio</span>
+      <h1 class="reveal d1">Small apps, made<br /> with <span class="grad-text">intent</span>.</h1>
+      <p class="lead reveal d2">Razón Studio builds calm, focused mobile apps for the quiet, meaningful parts of everyday life — memorizing Scripture, keeping a reading habit. Local-first, privacy-first, and beautifully unhurried.</p>
+      <div class="hero-actions reveal d3">
+        <a class="btn btn-primary btn-arrow" href="#apps">Explore the apps <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="#values">Our approach</a>
+      </div>
+    </div>
+  </section>
 
-  <footer class="site">
-    © 2026 Graphe. Contact:
-    <a href="mailto:razondeltodo@gmail.com">razondeltodo@gmail.com</a>
-  </footer>
-</div>
+  <!-- Apps -->
+  <section class="section" id="apps">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="kicker">The apps</div>
+        <h2>Two apps. One quiet philosophy.</h2>
+        <p>Each app does one thing with care. Both work fully offline, keep your data on your device, and never show ads.</p>
+      </div>
+
+      <div class="app-grid">
+        <!-- Graphe -->
+        <a class="app-card reveal d1" href="graphe/" style="--c1:#94a484;--c2:#6e7d5e;--c3:#c19a54;">
+          <span class="glow" aria-hidden="true"></span>
+          <img class="app-icon" src="assets/graphe-icon-256.png" alt="Graphe app icon" width="74" height="74" loading="lazy" />
+          <div class="app-head"><h3>Graphe</h3><span class="tag">Faith · Study</span></div>
+          <p class="role">Memorize &amp; study the Bible</p>
+          <p class="desc">A calm, game-based way to hide God's Word in your heart — bite-sized daily lessons, 40+ memory games, spaced repetition, and gentle group challenges with friends.</p>
+          <div class="meta">
+            <span class="chip">Spaced repetition</span>
+            <span class="chip">40+ games</span>
+            <span class="chip">Offline</span>
+            <span class="chip">Live group play</span>
+          </div>
+          <span class="go">View Graphe <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+
+        <!-- Daile -->
+        <a class="app-card reveal d2" href="daile/" style="--c1:#5b4bd6;--c2:#7d5be0;--c3:#e36fae;">
+          <span class="glow" aria-hidden="true"></span>
+          <img class="app-icon" src="assets/daile-icon-256.png" alt="Daile app icon" width="74" height="74" loading="lazy" />
+          <div class="app-head"><h3>Daile</h3><span class="tag">Reading · Habit</span></div>
+          <p class="role">Your reading diary</p>
+          <p class="desc">The gentle daily nudge that asks "did you read today?" — a smart pacing engine finds exactly how many pages to read, honours your rest days, and never breaks your streak for resting.</p>
+          <div class="meta">
+            <span class="chip">Adaptive pacing</span>
+            <span class="chip">Rest days</span>
+            <span class="chip">Reading feed</span>
+            <span class="chip">Offline</span>
+          </div>
+          <span class="go">View Daile <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="section alt" id="values">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <div class="kicker">The approach</div>
+        <h2>Built the way we'd want to be treated.</h2>
+        <p>The same principles run through everything we make.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature reveal d1">
+          <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a4 4 0 0 0-4 4v3H7a3 3 0 0 0-3 3v5a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-5a3 3 0 0 0-3-3h-1V7a4 4 0 0 0-4-4z"/></svg></div>
+          <h3>Private by default</h3>
+          <p>Use either app fully as a guest — nothing leaves your device. No ads, no third-party ad trackers, no selling your data. Ever.</p>
+        </div>
+        <div class="feature reveal d2">
+          <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6a2 2 0 0 1 2-2h10l4 4v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M8 4v6h8"/><path d="M8 15h5"/></svg></div>
+          <h3>Local-first &amp; offline</h3>
+          <p>Your library, progress, and streaks live on your device and keep working with no signal. An optional free account only adds sync and friends.</p>
+        </div>
+        <div class="feature reveal d3">
+          <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.35-9.5-8.5C.9 9.7 2.2 6 5.5 6 7.6 6 9 7.5 12 10c3-2.5 4.4-4 6.5-4 3.3 0 4.6 3.7 3 6.5C19 16.65 12 21 12 21z"/></svg></div>
+          <h3>Calm, not clingy</h3>
+          <p>No streak guilt, no dark patterns, no noise. Just a peaceful daily practice designed to fit the in-between moments of your day.</p>
+        </div>
+      </div>
+
+      <div class="stats reveal d2" style="margin-top:24px;">
+        <div class="stat"><div class="n">2</div><div class="l">Apps &amp; growing</div></div>
+        <div class="stat"><div class="n">0</div><div class="l">Ads &amp; ad-trackers</div></div>
+        <div class="stat"><div class="n">100%</div><div class="l">Offline-capable</div></div>
+        <div class="stat"><div class="n">iOS · Android</div><div class="l">Cross-platform</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / contact -->
+  <section class="section" id="contact">
+    <div class="wrap">
+      <div class="split">
+        <div class="prose-block reveal">
+          <div class="kicker" style="font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:14px;">About the studio</div>
+          <h2>An independent studio for quiet software.</h2>
+          <p>Razón Studio is a small, independent shop making apps for the parts of life that deserve a calmer tool — a devotional habit, a book you're finally finishing. We care about craft, restraint, and respecting your attention and your data.</p>
+          <p>Have a question, a bug, or a kind word? We read every message.</p>
+          <div class="hero-actions" style="margin-top:26px;">
+            <a class="btn btn-primary" href="mailto:razondeltodo@gmail.com">Email the studio</a>
+            <a class="btn btn-ghost" href="#apps">Browse the apps</a>
+          </div>
+        </div>
+        <div class="split-media reveal d2">
+          <div class="card">
+            <h3 style="font-family:var(--font-serif);font-weight:600;font-size:22px;margin-bottom:6px;">App documents</h3>
+            <p style="color:var(--ink-muted);font-size:15px;margin:0 0 16px;">Privacy policies, terms, support and account-deletion pages for each app — required for the App Store &amp; Google Play, and public for you too.</p>
+            <div style="display:grid;gap:14px;">
+              <div>
+                <div style="font-weight:650;margin-bottom:6px;">Graphe</div>
+                <div class="toc" style="margin:0;"><a href="privacy/">Privacy</a><a href="terms/">Terms</a><a href="support/">Support</a><a href="delete-account/">Delete account</a></div>
+              </div>
+              <div>
+                <div style="font-weight:650;margin-bottom:6px;">Daile</div>
+                <div class="toc" style="margin:0;"><a href="daile/privacy/">Privacy</a><a href="daile/terms/">Terms</a><a href="daile/support/">Support</a><a href="daile/delete-account/">Delete account</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="padding-top:0;">
+    <div class="wrap">
+      <div class="cta-band reveal">
+        <div class="aurora" aria-hidden="true"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
+        <h2>Find your next quiet habit.</h2>
+        <p>Two small apps, thoughtfully made. Pick the one that's for you.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-arrow" href="graphe/">Discover Graphe <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-ghost btn-arrow" href="daile/">Discover Daile <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="/" aria-label="Razón Studio — home">
+          <span class="logo" aria-hidden="true"><svg viewBox="0 0 32 32" width="20" height="20" fill="none"><circle cx="12" cy="16" r="8" fill="#fff" opacity="0.9"/><circle cx="20" cy="16" r="8" fill="#fff" opacity="0.55"/></svg></span>
+          <span class="wordmark">Razón <small>· studio</small></span>
+        </a>
+        <p class="about">Small, calm, privacy-first mobile apps. Made independently for iOS &amp; Android.</p>
+      </div>
+      <div>
+        <h4>Graphe</h4>
+        <ul>
+          <li><a href="graphe/">Overview</a></li>
+          <li><a href="privacy/">Privacy</a></li>
+          <li><a href="terms/">Terms</a></li>
+          <li><a href="support/">Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Daile</h4>
+        <ul>
+          <li><a href="daile/">Overview</a></li>
+          <li><a href="daile/privacy/">Privacy</a></li>
+          <li><a href="daile/terms/">Terms</a></li>
+          <li><a href="daile/support/">Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="#apps">Apps</a></li>
+          <li><a href="#values">Approach</a></li>
+          <li><a href="mailto:razondeltodo@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Razón Studio. All rights reserved.</span>
+      <span class="apps-mini"><a href="graphe/">Graphe</a><a href="daile/">Daile</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
 </body>
 </html>
