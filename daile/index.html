@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" data-app="daile">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daile — Your reading diary</title>
+<meta name="description" content="Daile is a reading-diary app with a smart pacing engine that finds exactly how many pages to read today, honours your rest days, and keeps a gentle daily reading habit." />
+<meta name="theme-color" content="#f3f1ff" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#100e1c" media="(prefers-color-scheme: dark)" />
+<link rel="icon" href="../assets/favicon.png" type="image/png" />
+<link rel="apple-touch-icon" href="../assets/daile-icon-256.png" />
+<link rel="stylesheet" href="../styles.css" />
+<meta property="og:title" content="Daile — Your reading diary" />
+<meta property="og:description" content="The gentle daily nudge that asks: did you read today?" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://graphe.app/daile/" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Daile — home">
+      <span class="logo" aria-hidden="true"><img src="../assets/daile-icon-256.png" alt="" width="30" height="30" /></span>
+      <span class="wordmark">Daile</span>
+    </a>
+    <div class="nav-right">
+      <nav class="nav-links" id="nav-links">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#docs">Documents</a>
+        <a href="../">All apps</a>
+      </nav>
+      <button class="icon-btn" data-theme-toggle aria-label="Toggle light or dark theme">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <button class="icon-btn nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="aurora" aria-hidden="true"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <span class="eyebrow reveal"><span class="dot"></span> Reading habit, made gentle</span>
+          <h1 class="reveal d1">Did you read <span class="grad-text">today?</span></h1>
+          <p class="lead reveal d2">Daile is your reading diary. Set a finish date and the pages you'll read; a smart pacing engine works out exactly how many pages to read today — and quietly re-paces when life happens. Rest days are first-class, and resting never breaks your streak.</p>
+          <div class="hero-actions reveal d3">
+            <a class="store-badge" href="#docs" aria-label="Coming soon to the App Store">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.365 1.43c0 1.14-.42 2.2-1.13 3.02-.83.98-2.2 1.74-3.32 1.65-.14-1.12.42-2.3 1.1-3.06.78-.86 2.16-1.5 3.35-1.61zM20.5 17.2c-.62 1.43-.92 2.06-1.72 3.32-1.12 1.77-2.7 3.97-4.66 3.98-1.74.02-2.19-1.13-4.55-1.12-2.36.01-2.85 1.14-4.6 1.12-1.96-.02-3.45-1.99-4.57-3.75C-.8 16.4-1.2 10.9 1.02 8.03c1.14-1.5 2.94-2.44 4.6-2.44 1.7 0 2.77 1.13 4.18 1.13 1.37 0 2.2-1.13 4.17-1.13 1.5 0 3.08.81 4.2 2.22-3.7 2.02-3.1 7.28.33 9.39z"/></svg>
+              <span class="txt"><small>Coming soon on the</small><span>App Store</span></span>
+            </a>
+            <a class="store-badge soft" href="#docs" aria-label="Coming soon on Google Play">
+              <svg viewBox="0 0 24 24"><path fill="#34A853" d="M3.6 2.3 13.4 12 3.6 21.7c-.3-.2-.5-.6-.5-1.1V3.4c0-.5.2-.9.5-1.1z"/><path fill="#4285F4" d="M3.6 2.3c.3-.2.7-.2 1.1 0L16.5 9l-3.1 3z"/><path fill="#FBBC04" d="M13.4 12l3.1-3 3.4 1.9c.8.5.8 1.7 0 2.2L16.5 15z"/><path fill="#EA4335" d="M3.6 21.7 13.4 12l3.1 3L4.7 21.7c-.4.2-.8.2-1.1 0z"/></svg>
+              <span class="txt"><small>Coming soon on</small><span>Google Play</span></span>
+            </a>
+          </div>
+          <p class="store-note reveal d3">Launching soon on iOS &amp; Android. All privacy &amp; support documents are live below.</p>
+        </div>
+        <div class="split-media reveal d2">
+          <div class="phone" aria-hidden="true">
+            <div class="screen"><div class="pscreen-pad">
+              <span class="mock-badge">Good evening, Mara</span>
+              <div class="mock-serif" style="font-size:20px;">The Overstory</div>
+              <div class="mock-ring" style="--p:68%;"><b>22</b></div>
+              <div style="text-align:center;font-size:12px;color:var(--ink-muted);margin-top:-4px;">pages today · on track</div>
+              <div class="mock-pills"><span class="mock-pill on">Yes I did</span><span class="mock-pill">Not yet</span></div>
+              <div class="mock-card">
+                <div style="font-size:12px;color:var(--ink-muted);font-weight:600;">Streak</div>
+                <div style="font-family:var(--font-serif);font-size:20px;">8 days 🔥</div>
+              </div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="section" style="padding-top:0;">
+    <div class="wrap">
+      <div class="stats reveal">
+        <div class="stat"><div class="n">Adaptive</div><div class="l">Pages-today engine</div></div>
+        <div class="stat"><div class="n">Rest days</div><div class="l">First-class</div></div>
+        <div class="stat"><div class="n">Offline</div><div class="l">Explore as guest</div></div>
+        <div class="stat"><div class="n">Social</div><div class="l">Reading feed</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section alt" id="features">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="kicker">Features</div>
+        <h2>A reading companion that adapts to you.</h2>
+        <p>Not a fixed quota you'll fall behind on — a pace that recalculates every day.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature reveal d1">
+          <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+          <h3>Smart daily pacing</h3>
+          <p>Set a finish date, your reading days, and your pace — Daile computes today's pages from what's left, adapting as you get ahead or fall behind.</p>
+        </div>
+        <div class="feature reveal d2">
+          <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></div>
+          <h3>Rest days, done right</h3>
+          <p>Pick the weekdays you actually read. On a rest day you get a calm "Rest day 🌙" card — and your streak never breaks for resting.</p>
+        </div>
+        <div class="feature reveal d3">
+          <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg></div>
+          <h3>"Life happens" replan</h3>
+          <p>Fell behind? Replan logs what you managed and re-paces the remaining pages instantly — keeping your streak and your target date.</p>
+        </div>
+        <div class="feature reveal d1">
+          <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
+          <h3>Instant book search</h3>
+          <p>Add any book by title, author, or ISBN via Google Books — cover, page count, rating, and description, ready in a tap.</p>
+        </div>
+        <div class="feature reveal d2">
+          <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <h3>Reflections &amp; feed</h3>
+          <p>Save quotes and thoughts, and optionally share to a reading feed. Follow readers, like and comment — a real, gentle community.</p>
+        </div>
+        <div class="feature reveal d3">
+          <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10 10 0 0 1 12 20c-7 0-11-8-11-8a18 18 0 0 1 5.06-5.94M9.9 4.24A9 9 0 0 1 12 4c7 0 11 8 11 8a18 18 0 0 1-2.16 3.19"/><path d="M1 1l22 22"/></svg></div>
+          <h3>Spoiler-safe sharing</h3>
+          <p>Mark a shared reflection as a spoiler and it stays hidden behind a warning — auto-revealing only once a reader passes that page.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="section" id="how">
+    <div class="wrap">
+      <div class="split rev">
+        <div class="split-media reveal">
+          <div class="phone" aria-hidden="true">
+            <div class="screen"><div class="pscreen-pad">
+              <span class="mock-badge">Plan setup</span>
+              <div class="mock-serif" style="font-size:20px;">Finish by Sep 30</div>
+              <div class="mock-card">
+                <div style="font-size:12px;color:var(--ink-muted);font-weight:600;">Reading days</div>
+                <div class="mock-pills" style="margin-top:4px;"><span class="mock-pill on">M</span><span class="mock-pill on">T</span><span class="mock-pill on">W</span><span class="mock-pill on">T</span><span class="mock-pill on">F</span><span class="mock-pill">S</span><span class="mock-pill">S</span></div>
+              </div>
+              <div class="mock-card">
+                <div style="display:flex;justify-content:space-between;font-size:13px;"><span style="color:var(--ink-muted);">Pages / day</span><b>22</b></div>
+                <div style="display:flex;justify-content:space-between;font-size:13px;"><span style="color:var(--ink-muted);">Minutes / day</span><b>~31</b></div>
+              </div>
+              <div style="margin-top:auto;font-size:12px;color:var(--ink-muted);">Paces remaining pages from today</div>
+            </div></div>
+          </div>
+        </div>
+        <div class="prose-block reveal d1">
+          <h2>You set the preferences. Daile does the math.</h2>
+          <p>You never store a hard "pages per day". Daile recomputes the goal every time you open the app, always aimed at landing on your target date — and tells you whether you're ahead, on track, or behind.</p>
+          <ul class="check-list">
+            <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><span>A big reading day <b>lowers tomorrow's goal</b>; a skipped day nudges it up.</span></li>
+            <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><span>The daily <b>reminder only fires on reading days</b> — never on your rest days.</span></li>
+            <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><span>Everything works <b>offline in guest mode</b> — sign in only to sync and follow readers.</span></li>
+            <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><span>Dictate notes with your keyboard mic — <b>Daile never records audio</b>.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy strip -->
+  <section class="section alt">
+    <div class="wrap narrow">
+      <div class="section-head center reveal">
+        <div class="kicker">Private by design</div>
+        <h2>Nothing is shared unless you share it.</h2>
+      </div>
+      <div class="callout reveal d1">
+        <p>Your library, logs, and unshared notes stay on your device in guest mode. A reflection reaches the feed only when you turn on <strong>“Share to feed”</strong>. <strong>No ads, no ad-trackers</strong> — book searches go to Google Books with no account data attached.</p>
+      </div>
+      <div style="text-align:center;margin-top:20px;" class="reveal d2">
+        <a class="btn btn-ghost btn-arrow" href="privacy/">Read the privacy policy <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Documents -->
+  <section class="section" id="docs">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="kicker">Documents</div>
+        <h2>Legal &amp; support</h2>
+        <p>Everything required for the App Store &amp; Google Play — and here for you, too.</p>
+      </div>
+      <div class="feature-grid">
+        <a class="feature reveal d1" href="privacy/" style="text-decoration:none;color:inherit;">
+          <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>Privacy Policy</h3>
+          <p>What Daile stores, shares, and the choices you have.</p>
+        </a>
+        <a class="feature reveal d2" href="terms/" style="text-decoration:none;color:inherit;">
+          <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg></div>
+          <h3>Terms of Use</h3>
+          <p>The agreement that governs using the app.</p>
+        </a>
+        <a class="feature reveal d3" href="support/" style="text-decoration:none;color:inherit;">
+          <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <h3>Support &amp; FAQ</h3>
+          <p>Common questions and how to reach us.</p>
+        </a>
+        <a class="feature reveal d1" href="delete-account/" style="text-decoration:none;color:inherit;">
+          <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2m3 0v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/></svg></div>
+          <h3>Delete your account</h3>
+          <p>How to permanently erase your account and data.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="padding-top:0;">
+    <div class="wrap">
+      <div class="cta-band reveal">
+        <div class="aurora" aria-hidden="true"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
+        <h2>Finish the book you keep meaning to.</h2>
+        <p>A gentle daily nudge, a pace that adapts, and rest days that never cost you your streak.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#docs">Read the documents</a>
+          <a class="btn btn-ghost" href="../graphe/">Meet Graphe, too</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="./" aria-label="Daile — home">
+          <span class="logo" aria-hidden="true"><img src="../assets/daile-icon-256.png" alt="" width="30" height="30" /></span>
+          <span class="wordmark">Daile</span>
+        </a>
+        <p class="about">A reading-diary app with a smart, gentle pacing engine. By Razón Studio.</p>
+      </div>
+      <div>
+        <h4>Daile</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="privacy/">Privacy</a></li>
+          <li><a href="terms/">Terms</a></li>
+          <li><a href="support/">Support</a></li>
+          <li><a href="delete-account/">Delete account</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="../">All apps</a></li>
+          <li><a href="../graphe/">Graphe</a></li>
+          <li><a href="mailto:razondeltodo@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="mailto:razondeltodo@gmail.com">razondeltodo@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Daile · Razón Studio.</span>
+      <span class="apps-mini"><a href="../">Studio</a><a href="../graphe/">Graphe</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="../site.js"></script>
+</body>
+</html>
