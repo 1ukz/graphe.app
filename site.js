@@ -51,17 +51,29 @@
       window.addEventListener("scroll", onScroll, { passive: true });
     }
 
-    /* scroll reveal */
+    /* scroll reveal — hide only once we know JS + observer are available, so a
+       failed/blocked script can never leave the page invisible. */
     var reveals = document.querySelectorAll(".reveal");
-    if ("IntersectionObserver" in window && reveals.length) {
+    var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (!reduceMotion && "IntersectionObserver" in window && reveals.length) {
       var io = new IntersectionObserver(function (entries) {
         entries.forEach(function (en) {
-          if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+          if (en.isIntersecting) {
+            en.target.classList.remove("reveal-init");
+            en.target.classList.add("in");
+            io.unobserve(en.target);
+          }
         });
       }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
-      reveals.forEach(function (el) { io.observe(el); });
-    } else {
-      reveals.forEach(function (el) { el.classList.add("in"); });
+      reveals.forEach(function (el) { el.classList.add("reveal-init"); io.observe(el); });
+      /* safety net: force-reveal anything still hidden shortly after load */
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          document.querySelectorAll(".reveal.reveal-init").forEach(function (el) {
+            el.classList.remove("reveal-init"); el.classList.add("in");
+          });
+        }, 2500);
+      });
     }
 
     /* current year */
